@@ -14,7 +14,7 @@ a simple README.md generator using node and inquirer
 inquirer
 
 ## Usage
-to creat README.md files
+to create README.md files
 
 ## Liscense
 MIT
@@ -26,3 +26,4 @@ tiiedye
 no
 
 ## Links
+https://github.com/tiiedye/09-README-Generator
