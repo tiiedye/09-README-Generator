@@ -1,5 +1,5 @@
-NaNREADME Generator
-a simple README.md file generator using node and inquirer
+# README Generator
+a README.md generator
 
 ## Table of Contents
 * Installation
@@ -13,7 +13,7 @@ a simple README.md file generator using node and inquirer
 inquirer
 
 ## Usage
-creating simple README files
+to make README files
 
 ## Liscense
 MIT
@@ -25,4 +25,3 @@ MIT
 no
 
 ## Links
-no

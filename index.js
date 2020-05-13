@@ -50,7 +50,7 @@ inquirer
         }
     ]).then(function(data) {
         fs.writeFile("README.md", 
-                         + "# " + data.title + '\n'
+                         "# " + data.title + '\n'
                          + data.description + '\n'
                          + '\n' + "## Table of Contents" + '\n' + "* Installation"
                                                         + '\n' + "* Usage"
