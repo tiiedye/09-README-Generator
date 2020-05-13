@@ -1,6 +1,6 @@
 [![Generic badge](https://img.shields.io/badge/README-Generator-brightgreen.svg)](https://shields.io/)
 # README Generator
-a simple README generator using node and inquirer
+a simple README.md generator using node and inquirer
 
 ## Table of Contents
 * Installation
@@ -14,7 +14,7 @@ a simple README generator using node and inquirer
 inquirer
 
 ## Usage
-to create README.md files
+to creat README.md files
 
 ## Liscense
 MIT
