@@ -5,4 +5,5 @@ copied homework files from UCLA Repo
 installed inquirer files
 added require inquirer and fs
 
-began writing inquirer.prompt
+wrote inquirer.prompt
+wrote then promise and function err/success

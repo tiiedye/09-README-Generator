@@ -49,21 +49,23 @@ inquirer
             message: "Enter a link to your gitHub repository:"
         }
     ]).then(function(data) {
-        fs.writeFile("README.md",
-                        "# " + JSON.stringify(data.title) + '\n'
-                         + JSON.stringify(data.description) + '\n'
+        fs.writeFile("README.md", 
+                    "![Badge](img.shields.io/badge/README-Generator-brightgreen)"
+                         + '\n'
+                         + "# " + data.title + '\n'
+                         + data.description + '\n'
                          + '\n' + "## Table of Contents" + '\n' + "* Installation"
                                                         + '\n' + "* Usage"
                                                         + '\n' + "* License"
                                                         + '\n' + "* Contributing"
                                                         + '\n' + "* Tests"
                                                         + '\n' + "* Links" + '\n'
-                        + '\n' + "## Installation" + '\n' + JSON.stringify(data.installation) + '\n'
-                        + '\n' + "## Usage" + '\n' + JSON.stringify(data.usage) + '\n'
-                        + '\n' + "## Liscense" + '\n' + JSON.stringify(data.liscense) + '\n'
-                        + '\n' + "## Contributing" + '\n' + JSON.stringify(data.contributors) + '\n'
-                        + '\n' + "## Tests" + '\n' + JSON.stringify(data.test) + '\n'
-                        + '\n' + "## Links" + '\n' + JSON.stringify(data.repo),
+                        + '\n' + "## Installation" + '\n' + data.installation + '\n'
+                        + '\n' + "## Usage" + '\n' + data.usage + '\n'
+                        + '\n' + "## Liscense" + '\n' + data.liscense + '\n'
+                        + '\n' + "## Contributing" + '\n' + data.contributors + '\n'
+                        + '\n' + "## Tests" + '\n' + data.test + '\n'
+                        + '\n' + "## Links" + '\n' + data.repo,
                     function(err) {
                         if (err) {
                             return console.log(err);
@@ -73,17 +75,3 @@ inquirer
                     }
         )
     })
-
-
-// const questions = [
-
-// ];
-
-// function writeToFile(fileName, data) {
-// }
-
-// function init() {
-
-// }
-
-// init();
