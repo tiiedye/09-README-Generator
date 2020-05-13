@@ -50,8 +50,6 @@ inquirer
         }
     ]).then(function(data) {
         fs.writeFile("README.md", 
-                    "![Badge](img.shields.io/badge/README-Generator-brightgreen)"
-                         + '\n'
                          + "# " + data.title + '\n'
                          + data.description + '\n'
                          + '\n' + "## Table of Contents" + '\n' + "* Installation"
@@ -63,7 +61,7 @@ inquirer
                         + '\n' + "## Installation" + '\n' + data.installation + '\n'
                         + '\n' + "## Usage" + '\n' + data.usage + '\n'
                         + '\n' + "## Liscense" + '\n' + data.liscense + '\n'
-                        + '\n' + "## Contributing" + '\n' + data.contributors + '\n'
+                        + '\n' + "## Contributing" + '\n' + "@" + data.contributors + '\n'
                         + '\n' + "## Tests" + '\n' + data.test + '\n'
                         + '\n' + "## Links" + '\n' + data.repo,
                     function(err) {
